@@ -1,12 +1,14 @@
 import "./App.css";
-import { Clock } from "./Components/Clock";
 import { NavBar } from "./Components/NavBar";
+import { AnalogClock } from "./Components/AnalogClock";
+import { Gallery } from "./Components/Gallery";
 
 function App() {
   return (
     <div className="App">
+      <AnalogClock></AnalogClock>
       <NavBar></NavBar>
-      <Clock></Clock>
+      <Gallery />
     </div>
   );
 }

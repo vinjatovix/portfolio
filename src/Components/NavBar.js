@@ -18,7 +18,7 @@ export const NavBar = () => {
       <h1 onMouseOver={handlerName} style={{ color: fontColor }}>
         {name}
       </h1>
-      <ul>
+      <ul className="NavBar">
         <LinkElement handler={handleColor}>Work</LinkElement>
         <LinkElement handler={handleColor}>About</LinkElement>
         <LinkElement handler={handleColor}>Contact</LinkElement>

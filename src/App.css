@@ -1,14 +1,21 @@
 .App {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-items: center;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
 }
 
+.NavBar {
+  display: flex;
+}
 li {
   font-size: 48px;
   font-weight: bold;
   list-style: none;
   padding: 3rem;
+  text-align: center;
 }
 
 h1 {
@@ -16,8 +23,8 @@ h1 {
 }
 
 a {
-  text-decoration: none;
   color: #ececec;
+  text-decoration: none;
 }
 
 .Clock {

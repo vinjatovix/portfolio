@@ -1,0 +1,43 @@
+.Gallery {
+  display: flex;
+  gap: 1rem;
+}
+
+.Panel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+  width: 120px;
+  filter: blur(2px);
+  transition: all 0.5s;
+}
+.Panel:hover {
+    transition: all 0.5s cubic-bezier(0.42, -0.18, 0.12, -0.21);
+  transform: scale(1.3);
+  filter: blur(0px);
+}
+
+.Panel > p {
+  background-color: rgba(0, 0, 0, 0.644);
+  text-align: center;
+}
+
+.panel1 {
+  background-image: url(https://source.unsplash.com/800x600/?server);
+}
+.panel2 {
+  background-image: url(https://source.unsplash.com/800x600/?javascript);
+}
+.panel3 {
+  background-image: url(https://source.unsplash.com/800x600/?games);
+}
+.panel4 {
+  background-image: url(https://source.unsplash.com/800x600/?electronics);
+}
+.panel5 {
+  background-image: url(https://source.unsplash.com/800x600/?science);
+}
