@@ -1,0 +1,32 @@
+.AddGifCategory {
+  width: 600px;
+}
+
+.AddGifCategory input {
+  padding: 0.3rem;
+  width: 100%;
+}
+
+.GifGrid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.GifItem {
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.GifItem p {
+  padding: 5px;
+  text-align: center;
+}
+
+.GifItem img {
+  max-height: 170px;
+}

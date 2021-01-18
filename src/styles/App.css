@@ -10,7 +10,7 @@
 .NavBar {
   display: flex;
 }
-li {
+ul>li {
   font-size: 48px;
   font-weight: bold;
   list-style: none;

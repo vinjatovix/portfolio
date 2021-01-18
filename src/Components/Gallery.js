@@ -3,7 +3,7 @@ import "../styles/Gallery.css";
 export const Gallery = () => {
   const handleMouseOver = (e) => {
     e.preventDefault();
-    console.log(e.target);
+    // console.log(e.target);
   };
   return (
     <div className="Gallery">
