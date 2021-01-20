@@ -28,17 +28,17 @@
 }
 
 .panel1 {
-  background-image: url(https://source.unsplash.com/800x600/?server);
+  background-image: url("../assets/pexels-david-alberto-carmona-coto-1151418.jpg");
 }
 .panel2 {
-  background-image: url(https://source.unsplash.com/800x600/?javascript);
+  background-image: url("../assets/pexels-ece-ak-3130392.jpg");
 }
 .panel3 {
-  background-image: url(https://source.unsplash.com/800x600/?games);
+  background-image: url("../assets/pexels-elizaveta-kozorezova-1825189.jpg");
 }
 .panel4 {
-  background-image: url(https://source.unsplash.com/800x600/?electronics);
+  background-image: url("../assets/pexels-negative-space-34153.jpg");
 }
 .panel5 {
-  background-image: url(https://source.unsplash.com/800x600/?science);
+  background-image: url("../assets/pexels-pixabay-270360.jpg");
 }
