@@ -1,5 +1,9 @@
-.Gallery {
-  display: flex;
+.Gallery {display:none}
+@media (min-width: 700px){
+
+  
+  .Gallery {
+    display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -17,7 +21,7 @@
   transition: all 0.5s;
 }
 .Panel:hover {
-    transition: all 0.5s cubic-bezier(0.42, -0.18, 0.12, -0.21);
+  transition: all 0.5s cubic-bezier(0.42, -0.18, 0.12, -0.21);
   transform: scale(1.3);
   filter: blur(0px);
 }
@@ -41,4 +45,6 @@
 }
 .panel5 {
   background-image: url("../assets/pexels-pixabay-270360.jpg");
+}
+
 }

@@ -1,39 +1,93 @@
 .App {
-display: grid;
-gap: 1rem;
-grid-template-columns: auto;
-justify-content: center;
-justify-items: center;
-padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+  justify-content: center;
+  justify-items: center;
+  padding: 1rem;
 }
 .NavBar {
   display: flex;
   flex-direction: column;
 }
 
-ul>li {
+ul > li {
   font-size: 24px;
   font-weight: bold;
   list-style: none;
   padding: 1rem;
   text-align: center;
 }
-@media (min-width: 768px){
 
-
-
-
-h1 {
-  color: rebeccapurple;
+.SearchForm input {
+  padding: 0.3rem;
+  margin: 0.5rem;
+  width: 100%;
+}
+.SearchForm {
+  width: 90vw;
+  max-width: 600px;
 }
 
-a {
-  color: #ececec;
-  text-decoration: none;
+/* .SearchFormIChing {
+} */
+
+
+
+.GifsGrid {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.IChingGrid {
+  padding: 0.5rem;
+  gap: 1rem;
+  border: 3px groove gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.IChingGrid h1 {
+  widows: 100%;
+  color: gold;
+  font-size: 56px;
+  font-weight: lighter;
 }
 
-.Clock {
-  font-size: 48px;
+.GifItem {
+  align-content: center;
+  border: 1px solid grey;
+  border-radius: 13px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+.GifItem p {
+  padding: 5px;
+  text-align: center;
 }
 
+.GifItem img {
+  max-height: 170px;
+}
+
+@media (min-width: 400px) {
+  .NavBar {
+    flex-direction: row;
+  }
+
+  h1 {
+    color: rebeccapurple;
+  }
+
+  a {
+    color: #ececec;
+    text-decoration: none;
+  }
+
+  .Clock {
+    font-size: 48px;
+  }
 }

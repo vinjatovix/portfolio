@@ -15,7 +15,7 @@ export const AddGifCategory = ({ setCategories }) => {
     }
   };
   return (
-    <form className="AddGifCategory" onSubmit={handleSubmit}>
+    <form className="AddGifCategory SearchForm" onSubmit={handleSubmit}>
       <input
         type="text"
         value={inputValue}
