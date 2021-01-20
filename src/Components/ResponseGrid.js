@@ -9,7 +9,7 @@ export const ResponseGrid = ({ question, hook, type }) => {
 
   if (type === "IChing") {
     let cambio = "";
-    console.log("data0", data[0]);
+    // console.log("data0", data[0]); //! LUPA
     if (data[0]?.change !== null) {
       cambio = (
         <>
