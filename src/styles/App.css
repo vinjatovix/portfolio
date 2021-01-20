@@ -28,6 +28,7 @@ ul > li {
   padding: 0.3rem;
   margin: 0.5rem;
   width: 70vw;
+  max-width: 600px;
 }
 
 /* .SearchFormIChing {
