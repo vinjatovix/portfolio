@@ -2,7 +2,6 @@ import { useState } from "react";
 import { AddSearchQuestion } from "./AddSearchQuestion";
 import { ResponseGrid } from "./ResponseGrid";
 
-const Response = (state) => {};
 
 export const SearchForm = (props) => {
   const [state, setState] = useState([]);

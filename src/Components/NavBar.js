@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { LinkElement } from "./LinkElement";
-
 export const NavBar = () => {
   const [name, setName] = useState("Pablo Viña");
   const [fontColor, setFontColor] = useState("#ffffff");
@@ -19,12 +18,16 @@ export const NavBar = () => {
         {name}
       </h1>
       <ul className="NavBar">
-        <LinkElement handler={handleColor}>Work</LinkElement>
-        <LinkElement handler={handleColor}>About</LinkElement>
-        <LinkElement handler={handleColor}>Contact</LinkElement>
+        {/* <LinkElement handler={handleColor} url="/gifs">
+          Gifs
+        </LinkElement> */}
+        <LinkElement handler={handleColor} url="/iching">
+          I-Ching
+        </LinkElement>
+        <LinkElement handler={handleColor} url="/gallery">
+          Gallery
+        </LinkElement>
       </ul>
     </>
   );
 };
-
-

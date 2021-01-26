@@ -1,6 +1,6 @@
-import "../styles/AnalogClock.css";
+import "../../styles/AnalogClock.css";
 import React from "react";
-import { useAnalogClock } from "../Hooks/useAnalogClock";
+import { useAnalogClock } from "../../Hooks/useAnalogClock";
 import { Needle } from "./Needle";
 
 export const AnalogClock = () => {

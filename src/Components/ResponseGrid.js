@@ -9,21 +9,15 @@ export const ResponseGrid = ({ question, hook, type }) => {
 
   if (type === "IChing") {
     let cambio = "";
-    // console.log("data0", data[0]); //! LUPA
     if (data[0]?.change !== null) {
       cambio = (
         <>
           <p style={{ color: "red" }}>Muta en</p>
           <h2>
-            {data[0]?.change?.to.number}.- {data[0]?.change?.to.names.join(" ")}
+            {data[0]?.change?.to.number}.- {data[1]?.cambio.nombre}
           </h2>
-          <a
-            href={`https://www.adivinario.com/i_ching_desc_${data[0]?.change?.to.number}.php`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            Web {data[0]?.change?.to.number}
-          </a>
+          <h3>Juicio: </h3>
+          <p>{data[1]?.cambio.juicio}</p>
         </>
       );
     }
@@ -34,16 +28,13 @@ export const ResponseGrid = ({ question, hook, type }) => {
         <h1>
           {data[0]?.hexagram.character} {data[0]?.change?.to.character}
         </h1>
+
         <h2>
-          {data[0]?.hexagram.number}.- {data[0]?.hexagram.names.join(" ")}
+          {data[0]?.hexagram.number}.- {data[1]?.init.nombre}
         </h2>
-        <a
-          href={`https://www.adivinario.com/i_ching_desc_${data[0]?.hexagram.number}.php`}
-          target="_blank"
-          rel="noreferrer"
-        >
-          Web {data[0]?.hexagram.number}
-        </a>
+        <h3>Juicio:</h3>
+        <p>{data[1]?.init.juicio}</p>
+
         {cambio}
       </section>
     );
